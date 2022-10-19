@@ -1,6 +1,7 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\invokeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+//exmple 1
+Route::get('/user',[UserController::class,'afficher']);
+
+//exmple 2
+Route::get('/page',[UserController::class,'index']);
+
+//Contrôller à simple action
+Route::get('/invokable',invokeController::class);
