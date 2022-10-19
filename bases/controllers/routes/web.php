@@ -18,10 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 //exmple 1
 Route::get('/user',[UserController::class,'afficher']);
 
