@@ -18,10 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//exmple 1
+//Basic Controllers
 Route::get('/user',[UserController::class,'afficher']);
 
-//exmple 2
 Route::get('/page',[UserController::class,'index']);
 
 //Contrôller à simple action
