@@ -40,7 +40,7 @@ Route::any(('/pages'),function(){
 });
 
 //Route request
-Route::any(('/input'),function(){
+Route::any(('/form'),function(){
     return view('input');
 });
 
@@ -58,4 +58,4 @@ Route::any('/csrf',function(request $request){
 });
  
 //Route redirect
-Route::redirect('/he', '/pages');
+Route::redirect('/he', '/pages');  //redirected url from he to pages
