@@ -3,19 +3,26 @@
 namespace App\Http\Controllers;
  
 use Illuminate\Http\Request;
+
+use Illuminate\Foundation\Auth\User;
  
 class UserController extends Controller
 {
-    /**
-     * Store a new user.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
+    public function show($id)
+    {
+        return view('user', [
+            'user' => User::findOrFail($id)
+        ]);
+    }
+
     public function store(Request $request)
     {
-        $name = $request->input('name');
- 
-        //
+        $input = $request->input('name');
+        // $uri = $request->path();
+        //  $host =$request->host();
+        dd($input);
+        return view("store");
     }
+
 }
