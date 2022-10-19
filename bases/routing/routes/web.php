@@ -52,7 +52,7 @@ Route::get('/user',function(request $request){
 Route::get('/profile',function(){
     return view('csrf');
 });
-
+ 
 Route::any('/csrf',function(request $request){
     return  $request->input("name");
 });
