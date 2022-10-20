@@ -1,6 +1,12 @@
 <!-- how to create a model and a migrate -->
 php artisan make:model model_name -m
 
+<!-- how to create a migrate vide -->
+php artisan make:migration migrations_name
+
+<!-- how to create a migration with function up and down -->
+php artisan make:migration create_nametables_table
+
 <!-- how to migrate to phpmyadmin -->
 php artisan migrate
 

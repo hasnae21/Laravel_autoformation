@@ -1,4 +1,7 @@
+
 {{$users}}
+
+
 @foreach ($users as $user)
 
 <h1>Name : {{$user->Nom}}</h1>
