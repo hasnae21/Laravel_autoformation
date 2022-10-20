@@ -15,20 +15,20 @@ return new class extends Migration
     {
         // Schema::create('test', function (Blueprint $table) {
         //     $table->id();
-        //     $table->timestamps();
+        //  $table->timestamps();
         // });
-
+        
         Schema::create('tested', function (Blueprint $table) {
-            //  $table->temporary();
-            //  $table->bigIncrements('iid');
+
+            //  $table->temporary();            deleted after adding
+            //  $table->bigIncrements('iid');   id with auto_increment
+            $table->id();
             $table->string('name');
             $table->string('email');
             $table->integer('integer');
-            $table->id();
             $table->binary('photo');
             $table->foreignUuid('user_id');
-            //  $table->temporary();
-            //  $table->bigIncrements('iid');
+            //  $table->timestamps();
         });
     }
 
@@ -39,6 +39,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('test');
+        Schema::dropIfExists('tested');
     }
 };
