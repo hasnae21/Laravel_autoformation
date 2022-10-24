@@ -1,25 +1,22 @@
 # Laravel_autoformation
 
-Documentation du Laravel
-https://laravel.com/
+## Documentation du Laravel /https://laravel.com/
 
+### Les bases
 
+> Routing(Basic, Route Parameter, CSRF Protection)
 
-  Les bases
+> Controller(Writing Controller)
 
-Routing(Basic, Route Parameter, CSRF Protection)
+> Request(Accessing The REquest, Input)
 
-Controller(Writing Controller)
-
-Request(Accessing The REquest, Input)
-
-Blade Template( Blade Directive)
+> Blade Template( Blade Directive)
 
 
 
 
-  DataBase
+### DataBase
 
-QueryBuilder(Running Database, Select Statements, Row methode, Joins)
+> QueryBuilder(Running Database, Select Statements, Row methode, Joins)
 
-Migration(Generating Migration, Migration Structure, Running Migration, Tables, Indexes)
+> Migration(Generating Migration, Migration Structure, Running Migration, Tables, Indexes)
