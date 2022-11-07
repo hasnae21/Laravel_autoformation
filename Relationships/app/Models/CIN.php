@@ -4,7 +4,7 @@ namespace App\Models;
  
 use Illuminate\Database\Eloquent\Model;
  
-class Phone extends Model
+class CIN extends Model
 {
     /**
      * Defining The Inverse Of The Relationship
