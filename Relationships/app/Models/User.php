@@ -27,9 +27,5 @@ class User extends Authenticatable
     public function carte()
     {
         return $this->hasOne(Carte::class);
-
-        // ->withDefault([
-        //     'cin'=>'no_data '
-        // ]);
     }
 }
