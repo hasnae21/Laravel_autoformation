@@ -10,7 +10,7 @@ class UserController extends Controller
     //
     public function OneToOne(){
 
-        $one = User::find(1)->carte;
+        $one = User::find(1)->carte->cin;
         return $one;
 
     }
