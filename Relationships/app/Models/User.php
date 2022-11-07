@@ -2,11 +2,10 @@
 
 namespace App\Models;
 
-// use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 use Illuminate\Database\Eloquent\Model;
 
-use App\Http\Controllers\UserController;
 
 class User extends Model
 {
@@ -16,9 +15,9 @@ class User extends Model
      * Get the phone associated with the user using the methode (hasOne())
      */
 
-    public function cin()
+    public function carte()
     {
-        return $this->hasOne(Cin::class)->withDefault([
+        return $this->hasOne(Carte::class)->withDefault([
             'cin'=>'no_data '
         ]);
     }

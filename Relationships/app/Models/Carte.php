@@ -1,13 +1,14 @@
 <?php
  
 namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
  
 use Illuminate\Database\Eloquent\Model;
 
-use App\Http\Controllers\CinController;
 
 
-class Cin extends Model
+class Carte extends Model
 {
     /**
      * Defining The Inverse Of The Relationship

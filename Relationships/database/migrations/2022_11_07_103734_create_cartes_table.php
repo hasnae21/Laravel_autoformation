@@ -13,10 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('cins', function (Blueprint $table) {
+        Schema::create('cartes', function (Blueprint $table) {
             $table->id();
             $table->string('cin')->unique();
             $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id');
             $table->timestamps();
         });
     }
@@ -28,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cins');
+        Schema::dropIfExists('cartes');
     }
 };

@@ -1,8 +1,5 @@
 <?php
 namespace App\Http\Controllers;
- 
-// use App\Http\Controllers\UserController;
-// use App\Http\Controllers\CinController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -22,10 +19,10 @@ Route::get('/', function () {
 
     //return view('welcome');
 
-    $cin = Cin::find(1);   //
+    $carte = Carte::find(1);   //
     echo $cin->user->name;   //
 
     $user = User::find(1);   //chercher le user avec le cin avec l'id 1
-    echo $user->cin->cin;   //et imprimer son cin
+    echo $user->carte->cin;   //et imprimer son cin
     
 });
