@@ -15,6 +15,8 @@ class User extends Model
 
     public function cin()
     {
-        return $this->hasOne(Cin::class);
+        return $this->hasOne(Cin::class)->withDefault([
+            'cin'=>'no_data '
+        ]);
     }
 }

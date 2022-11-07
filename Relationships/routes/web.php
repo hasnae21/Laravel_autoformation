@@ -18,6 +18,10 @@ Route::get('/', function () {
 
     //return view('welcome');
 
-    $user = User::find(3);   //chercher le user avec le cin avec l'id 3 
-    echo $user->cins->cin;   //et imprimer son cin
+    $cin = Cin::find(1);   //
+    echo $cin->user->name;   //
+
+    $user = User::find(1);   //chercher le user avec le cin avec l'id 1
+    echo $user->cin->cin;   //et imprimer son cin
+    
 });
