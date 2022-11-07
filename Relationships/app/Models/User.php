@@ -2,12 +2,15 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+// use Illuminate\Database\Eloquent\Factories\HasFactory;
+
 use Illuminate\Database\Eloquent\Model;
+
+use App\Http\Controllers\UserController;
 
 class User extends Model
 {
-    use HasFactory;
+    //use HasFactory;
 
     /**
      * Get the phone associated with the user using the methode (hasOne())
