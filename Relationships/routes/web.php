@@ -16,4 +16,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [UserController::class, 'OneToOne']);
+Route::get('/test1', [UserController::class, 'OneToOne']);
+// Route::get('/test2', [UserController::class, 'OneToMany']);

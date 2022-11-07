@@ -20,8 +20,14 @@ class Carte extends Model
      * Get the user that owns the phone using the methode (belongsTo())
      */
 
-    public function user()
+
+    public function userOne()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class)->withDefault();
     }
+
+    // public function userMany()
+    // {
+    //     return $this->belongsTo(User::class)->withDefault();
+    // }
 }

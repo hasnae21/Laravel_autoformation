@@ -3,11 +3,11 @@
 namespace App\Models;
  
 use Illuminate\Database\Eloquent\Model;
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+
 
 class User extends Authenticatable
 {
@@ -24,8 +24,16 @@ class User extends Authenticatable
      * Get the phone associated with the user using the methode (hasOne())
      */
 
-    public function carte()
+
+    public function carteOne()
     {
         return $this->hasOne(Carte::class);
     }
+
+    // public function carteMany()
+    // {
+    //     return $this->hasMany(Carte::class);
+    // }
+
+
 }
