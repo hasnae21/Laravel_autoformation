@@ -17,10 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     //return view('welcome');
-
-    // $carte = Carte::find(1);   
-    // echo $cin->user->name;   
-
+    
     // $user = User::find(1);   
     // echo $user->carte->cin;  
     
