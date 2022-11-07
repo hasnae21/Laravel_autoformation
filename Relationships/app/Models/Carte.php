@@ -10,6 +10,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Carte extends Model
 {
+
+    use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+    ];
+
     /**
      * Defining The Inverse Of The Relationship
      * Get the user that owns the phone using the methode (belongsTo())
