@@ -7,13 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    
-@foreach($users as $user)
 
-    <h2>{{ $user->name }}</h2>
-    <p> {{ $user->carte->cin }} </p>
 
-@endforeach
 
 </body>
 </html>
