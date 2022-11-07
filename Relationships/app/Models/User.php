@@ -13,8 +13,8 @@ class User extends Model
      * Get the phone associated with the user using the methode (hasOne())
      */
 
-    public function phone()
+    public function cin()
     {
-        return $this->hasOne(Phone::class);
+        return $this->hasOne(Cin::class);
     }
 }
