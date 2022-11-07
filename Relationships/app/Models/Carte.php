@@ -13,7 +13,7 @@ class Carte extends Model
 
     use HasFactory;
 
-    protected $fillable = ['cin'];
+    protected $fillable = ['cin','user_id'];
 
     /**
      * Defining The Inverse Of The Relationship
