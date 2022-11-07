@@ -1,0 +1,39 @@
+<?php
+ 
+namespace App\Models;
+ 
+use Illuminate\Database\Eloquent\Model;
+ 
+class User extends Model
+{
+    /**
+     * Get the phone associated with the user.
+     */
+    public function phone()
+    {
+        return $this->hasOne(Phone::class);
+    }
+}
+
+$phone = User::find(1)->phone;
+
+return $this->hasOne(Phone::class, 'foreign_key');
+
+return $this->hasOne(Phone::class, 'foreign_key', 'local_key');
+
+<?php
+ 
+namespace App\Models;
+ 
+use Illuminate\Database\Eloquent\Model;
+ 
+class Phone extends Model
+{
+    /**
+     * Get the user that owns the phone.
+     */
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+}
