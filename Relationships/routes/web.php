@@ -17,10 +17,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     //return view('welcome');
-    
+
     // $user = User::find(1);   
     // echo $user->carte->cin;  
     
+    $users = \App\User::all();
 
+    return view('users.index',compact('users'));
 
 });
