@@ -26,8 +26,4 @@ class Carte extends Model
         return $this->belongsTo(User::class)->withDefault();
     }
 
-    // public function userMany()
-    // {
-    //     return $this->belongsTo(User::class)->withDefault();
-    // }
 }
