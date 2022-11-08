@@ -6,7 +6,6 @@
 > php artisan make:migration create_nametables_table
 
 
-
 ## how to make a controller full of ressources
 > make:controller nameController -r 
 
@@ -19,10 +18,10 @@
 > php artisan make:model testing -mcf
 
 
-# how to rollback data
+## how to rollback data
 
 > php artisan migrate:rollback
 
-# how to refrech database after rollbacking
+## how to refrech database after rollbacking
 
 > php artisan migrate:refresh
