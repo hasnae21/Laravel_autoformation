@@ -30,10 +30,10 @@ class User extends Authenticatable
         return $this->hasOne(Carte::class);
     }
 
-    // public function carteMany()
-    // {
-    //     return $this->hasMany(Carte::class);
-    // }
+    public function carteMany()
+    {
+        return $this->hasMany(Carte::class);
+    }
 
 
 }

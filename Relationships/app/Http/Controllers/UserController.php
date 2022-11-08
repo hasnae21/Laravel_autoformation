@@ -16,15 +16,15 @@ class UserController extends Controller
 
         $oneBelong = Carte::find(1)->userOne->name;
 
-        return view('index', compact("One","oneBelong"));
+        return view('indexone', compact("oneBelong","One"));
 
     }
 
-    // public function OneToMany(){
+    public function OneToMany(){
 
-    //     $Many = User::find(1)->userOne;
+        $Many = User::find(1)->userOne->cin;
 
-    //     return view('index', compact("Many"));
+        return view('indexmany', compact("Many"));
 
-    // }
+    }
 }
