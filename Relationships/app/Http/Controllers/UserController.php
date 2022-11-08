@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Models\User;
 use App\Models\Carte;
 
@@ -11,31 +12,29 @@ class UserController extends Controller
     //
     public function OneToOne(){
 
-        $One = User::find(2)->carteOne;
-        // return $One;
-        // $oneBelong = Carte::find(2)->userOne;
+        $One = User::find(1)->carteOne;
 
-        return view('indexone', compact("One"));
+        $oneBelong = Carte::find(2)->userOne;
+        
+        // return $One;
+        return view('indexone', compact("One","oneBelong"));
     }
     
+
     public function OneToMany(){
 
-        $Many = User::find(1)->userOne;
+        $Many = User::find(2)->carteMany;
 
         return view('indexmany', compact("Many"));
     }    
     
-
-    // public function belongsTo(){
-
-    //     $data = Carte::find(2);
-    //     return $data->carte .$data  ;
-    // }
     
     // public function belongsToMany(){
-    
-    //     $user = Carte::find(1);
-    //     return $user->User;
+
+    //     $Belong = Carte::find(1)->userMany;
+    //     // return $Belong;
+
+    //     return view('indexbelong', compact("Belong"));
     // }
 
 

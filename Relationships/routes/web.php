@@ -20,5 +20,4 @@ Route::get('one', [UserController::class, 'OneToOne']);
 Route::get('many', [UserController::class, 'OneToMany']);
 
 //BelongsTo
-// route::get('belongsTo',[UserController::class,"belongsTo"]);
-// route::get('belongsToMany',[UserController::class,"belongsToMany"]);
+// Route::get('belong',[UserController::class,"belongsToMany"]);
