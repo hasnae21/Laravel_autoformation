@@ -11,7 +11,6 @@
 <p>application OneToOne</p>
 
     <H3>    {{$One}}    </H3>
-    <h3>    {{$oneBelong}}  </h3>
 
 
 

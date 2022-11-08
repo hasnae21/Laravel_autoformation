@@ -1,6 +1,7 @@
 <?php
  
 namespace App\Models;
+use App\Models\User;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
  
@@ -13,7 +14,7 @@ class Carte extends Model
 
     use HasFactory;
 
-    protected $fillable = ['cin','user_id'];
+    //protected $fillable = ['cin','user_id'];
 
     /**
      * Defining The Inverse Of The Relationship
@@ -26,4 +27,8 @@ class Carte extends Model
         return $this->belongsTo(User::class)->withDefault();
     }
 
+    public function userMany()
+    {
+        return $this->belongsToMany(User::class)->withDefault();
+    }
 }
