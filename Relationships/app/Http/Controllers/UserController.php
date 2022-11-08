@@ -11,10 +11,10 @@ class UserController extends Controller
     //
     public function OneToOne(){
 
-        $One = User::find(1)->carteOne->cin;
+        $One = User::find(2)->carteOne->cin;
         // return $One;
 
-        $oneBelong = Carte::find(1)->userOne->name;
+        $oneBelong = Carte::find(2)->userOne;
 
         return view('indexone', compact("oneBelong","One"));
 
@@ -22,7 +22,7 @@ class UserController extends Controller
 
     public function OneToMany(){
 
-        $Many = User::find(1)->userOne->cin;
+        $Many = User::find(2)->userOne->cin;
 
         return view('indexmany', compact("Many"));
 
