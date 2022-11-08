@@ -24,7 +24,5 @@ class UserController extends Controller
 
         $Many = User::find(2)->userOne->cin;
 
-        return view('indexmany', compact("Many"));
 
-    }
 }
